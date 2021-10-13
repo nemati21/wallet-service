@@ -1,4 +1,4 @@
-class UserNotFoundError extends Error {
+class DiscountNotFoundError extends Error {
   constructor(code, message) {
     super('Discount not found');
     this.code = 1103;
@@ -7,4 +7,4 @@ class UserNotFoundError extends Error {
   }
 }
 
-module.exports = UserNotFoundError;
+module.exports = DiscountNotFoundError;
