@@ -44,8 +44,8 @@ const applyDiscount = async (mobile, code) => {
 
   const result = await decrementDiscount(code);
 
-  if (result && result.count) {
-    account.balance += 1000000;
+  if (result && result.count && !account.discountCode) {
+    account.balance += result.amount;
     account.code = code;
 
     await model.update(mobile, account);

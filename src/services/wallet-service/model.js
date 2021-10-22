@@ -5,7 +5,6 @@ const create = async (id, mobile, balance) => {
     id,
     mobile,
     balance,
-    // discountCode: account.code || undefined,
     createdts: new Date(new Date() - new Date().getTimezoneOffset() * 60000).toISOString(),
     updatedts: new Date(new Date() - new Date().getTimezoneOffset() * 60000).toISOString(),
   });
